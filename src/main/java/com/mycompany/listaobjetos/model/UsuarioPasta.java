@@ -14,5 +14,6 @@ public class UsuarioPasta {
     Gson gson=new Gson();
     
     //Criar Pasta
-    
+    File pasta=new File();
+    if(!pasta.ex)
 }

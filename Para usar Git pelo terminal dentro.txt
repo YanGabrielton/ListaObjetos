@@ -1,0 +1,38 @@
+Para usar Git pelo terminal dentro do NetBeans, você deve abrir o terminal integrado (Janela > IDE Tools > Terminal ou Ctrl + ') e navegar até a pasta do projeto. 
+Aqui estão os comandos sequenciais para realizar o Pull, Commit e Push:
+1. Atualizar o repositório local (Pull) 
+Antes de enviar, é recomendável garantir que seu código está atualizado. 
+bash
+
+git pull origin main
+# ou git pull origin master (se seu branch for master)
+
+2. Adicionar os arquivos alterados (Add) 
+Prepara as alterações para o commit. O . adiciona todos os arquivos modificados. 
+bash
+git add .
+
+3. Criar o commit (Commit) 
+
+Salva as alterações no seu repositório local com uma mensagem. 
+bash
+
+git commit -m "Sua mensagem de commit aqui"
+
+4. Enviar para o repositório remoto (Push) 
+Envia os commits locais para o servidor (ex: GitHub, GitLab). 
+bash
+
+git push origin main
+
+# ou git push origin master (se seu branch for master)
+Resumo em uma linha (Commit + Push)
+Se você já fez o git add . e quer comitar e enviar de uma vez:
+bash
+git commit -m "Mensagem" && git push origin main
+
+Dica para o NetBeans
+Se preferir, o NetBeans possui integração visual:
+Clique com o botão direito no projeto > Git.
+Commit: Selecione "Commit" e preencha a mensagem.
+Push: Selecione "Remote" > "Push to Upstream
