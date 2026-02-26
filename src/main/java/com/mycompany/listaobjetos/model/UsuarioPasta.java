@@ -30,7 +30,7 @@ public class UsuarioPasta {
   }
   String nomeArquivo= "dados/"+usuario.getIdUser()+".json";
 //aqui eu estou criando os arquivos dentro da pasta criada logo acima
-    FileWriter writer = new FileWriter(nomeArquivo);
+FileWriter writer = new FileWriter(nomeArquivo);
     gson.toJson(usuario,writer);
     writer.close();
       System.out.println("Arquivo salvo com sucesso!");
