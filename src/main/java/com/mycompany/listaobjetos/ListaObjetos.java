@@ -35,13 +35,11 @@ public class ListaObjetos {
        Usuario u=new Usuario(token,nome,email,idade);
        usuarios.add(u);
         
-        for(int i=0;i< usuarios.size();i++){
-        
-            System.out.println("Token: "+u.getIdUser()+"\n nome: "+u.getNome()+
-                    "\n email: "+u.getEmail()+
-                    "\n idade:  "+u.getIdade());
-        
-        }
+       for(Usuario user :usuarios){
+       
+       
+       
+       }
         
     }
 }

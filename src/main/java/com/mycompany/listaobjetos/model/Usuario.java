@@ -60,6 +60,7 @@ public class Usuario {
         return "Usuario{" + "idUser=" + idUser + ",\n nome=" + nome + ",\n email=" + email + ",\n idade=" + idade + '}';
     }
    
+    
    
     
 }
