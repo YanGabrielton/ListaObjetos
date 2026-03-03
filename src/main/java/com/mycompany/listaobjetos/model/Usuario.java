@@ -4,6 +4,8 @@
  */
 package com.mycompany.listaobjetos.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -58,6 +60,24 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario{" + "idUser=" + idUser + ",\n nome=" + nome + ",\n email=" + email + ",\n idade=" + idade + '}';
+    }
+    
+    public static List<Usuario> listarUsuarios(){
+        List<Usuario> listarUsuarios=new ArrayList<>();
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",17));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",19));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",45));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",97));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",10));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",1));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",84));
+listarUsuarios.add(new Usuario(UUID.randomUUID(),"José","jose@gmail.com ",99));
+    
+    
+       return listarUsuarios;
+    
+    
+    
     }
    
     
