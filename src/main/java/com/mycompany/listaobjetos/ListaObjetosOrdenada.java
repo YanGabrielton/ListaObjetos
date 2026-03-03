@@ -60,7 +60,7 @@ public class ListaObjetosOrdenada {
     
     
     
-    public static Usuario pegarUsuarios(List<Usuario>listaOriginal,List<Usuario>listaNova){
+    public static Usuario pegarUsuarios(List<Usuario>listaOriginal,List<Usuario>listaNova) throws IOException{
        Usuario maior =null;
         for(Usuario user:listaOriginal){
         
@@ -72,6 +72,8 @@ public class ListaObjetosOrdenada {
         //se o maior não for mais nullo
         if(maior != null){
         listaNova.add(maior);
+        UsuarioPasta pasta = new UsuarioPasta();
+    pasta.SalvarUsuarios(maior);
         
         
         }
