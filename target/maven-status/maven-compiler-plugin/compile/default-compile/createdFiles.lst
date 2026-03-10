@@ -1,4 +1,6 @@
 com\mycompany\listaobjetos\ListaObjetos.class
+com\mycompany\listaobjetos\model\CreateFolder.class
+com\mycompany\listaobjetos\NewMain.class
 com\mycompany\listaobjetos\ListaObjetosOrdenada.class
 com\mycompany\listaobjetos\model\UsuarioPasta.class
 com\mycompany\listaobjetos\model\Usuario.class
